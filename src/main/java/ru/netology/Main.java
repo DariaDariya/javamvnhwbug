@@ -1,7 +1,10 @@
-package ru.netology;
-
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        BonusService service = new BonusService();
+
+        long amount = 1000_60;
+        boolean registered = true;
+
+        service.calculate(amount, registered);
     }
 }
